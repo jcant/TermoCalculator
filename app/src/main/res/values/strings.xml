@@ -16,13 +16,15 @@
     <string name="btnXK">ХК</string>
     <string name="btnXKL">ХКL</string>
 
-    <string name="btn0_50">0..50</string>
-    <string name="btn0_100">0..100</string>
-    <string name="btn0_150">0..150</string>
-    <string name="btn0_180">0..180</string>
-    <string name="btn0_200">0..200</string>
-    <string name="btn0_300">0..300</string>
-    <string name="btn0_400">0..400</string>
-    <string name="btn0_500">0..500</string>
-    <string name="btn70_180">-70..180</string>
+    <string-array name="scales">
+        <item name="btn0_50">0..50</item>
+        <item name="btn0_100">0..100</item>
+        <item name="btn0_150">0..150</item>
+        <item name="btn0_180">0..180</item>
+        <item name="btn0_200">0..200</item>
+        <item name="btn0_300">0..300</item>
+        <item name="btn0_400">0..400</item>
+        <item name="btn0_500">0..500</item>
+        <item name="btn70_180">-70..180</item>
+    </string-array>
 </resources>
