@@ -7,12 +7,262 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/input_label"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/et_SignalValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="number"
+            android:text="@string/null_value"
+            android:textAlignment="textEnd"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_SignalLimits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/limits_label"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chNorm">
+
+        <ToggleButton
+            android:id="@+id/tgButton_50P"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:textOff="@string/btn50P"
+            android:textOn="@string/btn50P"
+            android:textSize="14sp" />
+
+        <ToggleButton
+            android:id="@+id/tglButton_50M"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:textOff="@string/btn50M"
+            android:textOn="@string/btn50M"
+            android:textSize="14sp" />
+
+        <ToggleButton
+            android:id="@+id/tglButton_100P"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:textOff="@string/btn100P"
+            android:textOn="@string/btn100P"
+            android:textSize="14sp" />
+
+        <ToggleButton
+            android:id="@+id/tglButton_21GR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:textOff="@string/btn21GR"
+            android:textOn="@string/btn21GR"
+            android:textSize="14sp" />
+
+        <ToggleButton
+            android:id="@+id/tglButton_23GR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:textOff="@string/btn23GR"
+            android:textOn="@string/btn23GR"
+            android:textSize="14sp" />
+
+        <ToggleButton
+            android:id="@+id/tglButton_XK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:textOff="@string/btnXK"
+            android:textOn="@string/btnXK"
+            android:textSize="14sp" />
+
+        <ToggleButton
+            android:id="@+id/tglButton_XKL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:textOff="@string/btnXKL"
+            android:textOn="@string/btnXKL"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/toggleButton8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_button"
+        android:checked="false"
+        android:text="Monthly"
+
+        android:textColor="@color/select_button_color"
+        android:textOff="Monthly"
+        android:textOn="Monthly"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton9"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:rotation="0"
+        android:textOff="@string/btn0_100"
+        android:textOn="@string/btn0_100"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton8" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton10"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:rotation="0"
+        android:textOff="@string/btn0_150"
+        android:textOn="@string/btn0_150"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton9" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton11"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:rotation="0"
+        android:textOff="@string/btn0_180"
+        android:textOn="@string/btn0_180"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton10" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton12"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:rotation="0"
+        android:textOff="@string/btn0_200"
+        android:textOn="@string/btn0_200"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton11" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton13"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:rotation="0"
+        android:textOff="@string/btn0_300"
+        android:textOn="@string/btn0_300"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton12" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton14"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+         android:rotation="0"
+        android:textOff="@string/btn0_400"
+        android:textOn="@string/btn0_400"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton13" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton15"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:rotation="0"
+        android:textOff="@string/btn0_500"
+        android:textOn="@string/btn0_500"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton14" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton16"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:rotation="0"
+        android:textOff="@string/btn70_180"
+        android:textOn="@string/btn70_180"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton15"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="6dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+    </LinearLayout>
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chNorm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:checked="false"
+        android:text="@string/swNormalized"
+        app:layout_constraintStart_toStartOf="@+id/tv_SignalLimits"
+        app:layout_constraintTop_toBottomOf="@+id/tv_SignalLimits" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

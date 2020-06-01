@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">Termo Calculator</string>
+
+    <string name="null_value">0</string>
+
+    <string name="input_label">Введите измеренное значение:</string>
+    <string name="limits_label">Пределы шкалы:</string>
+
+    <string name="swNormalized">Нормированный сигнал</string>
+
+    <string name="btn50P">50П</string>
+    <string name="btn50M">50М</string>
+    <string name="btn100P">100П</string>
+    <string name="btn21GR">21гр</string>
+    <string name="btn23GR">23гр</string>
+    <string name="btnXK">ХК</string>
+    <string name="btnXKL">ХКL</string>
+
+    <string name="btn0_50">0..50</string>
+    <string name="btn0_100">0..100</string>
+    <string name="btn0_150">0..150</string>
+    <string name="btn0_180">0..180</string>
+    <string name="btn0_200">0..200</string>
+    <string name="btn0_300">0..300</string>
+    <string name="btn0_400">0..400</string>
+    <string name="btn0_500">0..500</string>
+    <string name="btn70_180">-70..180</string>
 </resources>
