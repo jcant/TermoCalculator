@@ -2,9 +2,18 @@
     <string name="app_name">Termo Calculator</string>
 
     <string name="null_value">0</string>
+    <string name="err_value">*ошибка*</string>
+    <string name="no_data">no data</string>
+    <string name="scale_bounds">с %1$.2f по %2$.2f</string>
+    <string name="result">%1$.2f</string>
+    <string name="scale_bounds_empty">с ## по ##</string>
 
     <string name="input_label">Введите измеренное значение:</string>
     <string name="limits_label">Пределы шкалы:</string>
+    <string name="sensor_type">Тип датчика:</string>
+    <string name="scale_type">Шкала:</string>
+    <string name="result_label">Результат:</string>
+    <string name="degree_label">град.</string>
 
     <string name="swNormalized">Нормированный сигнал</string>
 
@@ -16,15 +25,18 @@
     <string name="btnXK">ХК</string>
     <string name="btnXKL">ХКL</string>
 
-    <string-array name="scales">
-        <item name="btn0_50">0..50</item>
-        <item name="btn0_100">0..100</item>
-        <item name="btn0_150">0..150</item>
-        <item name="btn0_180">0..180</item>
-        <item name="btn0_200">0..200</item>
-        <item name="btn0_300">0..300</item>
-        <item name="btn0_400">0..400</item>
-        <item name="btn0_500">0..500</item>
-        <item name="btn70_180">-70..180</item>
-    </string-array>
+    <string name="btn_mV">mV</string>
+    <string name="btn_mA">mA</string>
+    <string name="btn_mVSVRK">mV СВРК</string>
+
+    <string name="scale0_50">0..50</string>
+    <string name="scale0_100">0..100</string>
+    <string name="scale0_150">0..150</string>
+    <string name="scale0_180">0..180</string>
+    <string name="scale0_200">0..200</string>
+    <string name="scale0_300">0..300</string>
+    <string name="scale0_400">0..400</string>
+    <string name="scale0_500">0..500</string>
+    <string name="scale70_180">-70..180</string>
+
 </resources>
