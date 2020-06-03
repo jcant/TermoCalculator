@@ -2,7 +2,7 @@
     <string name="app_name">Termo Calculator</string>
 
     <string name="null_value">0</string>
-    <string name="err_value">*ошибка*</string>
+    <string name="err_value">---</string>
     <string name="no_data">no data</string>
     <string name="scale_bounds">с %1$.2f по %2$.2f</string>
     <string name="result">%1$.2f</string>

@@ -169,14 +169,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tglButton_100P.setEnabled(swNorm.isChecked());
         tglButton_XKL.setEnabled(swNorm.isChecked());
 
-        tglButton_mV.setEnabled(!swNorm.isChecked());
-        tglButton_mA.setEnabled(!swNorm.isChecked());
-        tglButton_mVSVRK.setEnabled(!swNorm.isChecked());
+        tglButton_mV.setEnabled(!swNorm.isChecked() && tglButton_XK.isChecked());
+        tglButton_mA.setEnabled(!swNorm.isChecked() && tglButton_XK.isChecked());
+        tglButton_mVSVRK.setEnabled(!swNorm.isChecked() && tglButton_XK.isChecked());
 
-        if (tglButton_50M.isChecked() ||
-                tglButton_21GR.isChecked() ||
-                tglButton_100P.isChecked() ||
-                tglButton_XKL.isChecked()) {
+        if (tglButton_50M.isChecked() || tglButton_21GR.isChecked() || tglButton_100P.isChecked() || tglButton_XKL.isChecked()) {
             toggleGroup(tglButton_50P.getId());
         }
     }
