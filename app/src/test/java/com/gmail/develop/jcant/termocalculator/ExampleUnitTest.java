@@ -1,5 +1,8 @@
 package com.gmail.develop.jcant.termocalculator;
 
+import com.gmail.develop.jcant.termocalculator.tables.G50P.G50P0_500N;
+import com.gmail.develop.jcant.termocalculator.tables.GradTable;
+
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -12,6 +15,7 @@ import static org.junit.Assert.*;
 public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() {
-        assertEquals(4, 2 + 2);
+        GradTable gt = new G50P0_500N();
+        assertEquals(24.91, gt.getTemperature(2.5));
     }
 }
